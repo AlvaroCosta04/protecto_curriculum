@@ -1,0 +1,263 @@
+*{
+ margin: 0;   
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Inter', sans-serif;
+}
+
+body{
+ background-color: rgb(95, 120, 128);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+
+.contenedor{
+position: relative;
+width:100%;
+max-width: 1000px;
+min-height: 1000px;
+margin: 50px;
+background: white;
+display:grid ;
+grid-template-columns: 1fr 1.5fr;
+}
+
+.contenedor .lado_izquierdo{
+position: relative;
+background: rgb(0, 15, 25);
+padding: 40px;
+}
+
+
+
+.Perfil{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+      position: relative;
+      display: flex;
+      flex-direction: column;  
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+.Perfil .imagen{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+ .Perfil .imagen img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.Perfil .imagen2{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 25%;
+        overflow: hidden;
+    }
+
+    .Perfil .imagen img{
+    position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .Perfil .contenedor_cambioimagen{
+        padding-top: 30px;       
+    }
+
+    .Perfil .numeros_cambioimagen{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-family: 'Rubik', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        display:inline-block;
+        padding-top: 3px;
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: 10px;
+        width: 30px;
+        font-size: 1em;
+        font-weight: 700;
+        border-radius: 0.5rem;
+        cursor: pointer;         
+        transition: box-shadow 0.3s ease;
+        
+    }
+
+    .Perfil .numeros_cambioimagen:hover{
+        box-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.9);
+    }
+
+    .Perfil .numeros_cambioimagen p{
+        margin: 0 auto;
+    }
+
+    .Perfil h2{
+       color: white;
+       margin-top: 20px;
+       text-transform: uppercase;
+       text-align: center;
+       font-family: 'Rubik', sans-serif;
+       font-weight: 600;
+       line-height: 1.4em;
+    }
+
+    .Perfil h2 span {
+        font-size: 0.8em;
+        font-weight: 300;
+
+    }
+    .Perfil p{
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: medium;
+    }
+    .Perfil #info{
+        max-width: 1fr;
+    }
+
+    .info_contacto{
+        padding-top:40px;
+    }
+    .titulo{
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    .info_contacto ul li{
+        position: relative;
+        list-style: none;
+        margin: 10px;
+        /*cursor: pointer;*/
+    }
+
+    .info_contacto ul li .icon{
+        display: inline-block;
+        width: 30px;
+        font-size: 18px;
+        color: white;
+    }
+
+    .info_contacto ul li span{
+        color: white;
+        font-weight: 300;
+    }
+
+    .info_contacto.educacion li {
+        margin-bottom: 15px;
+    }
+    .info_contacto h5{
+        margin-bottom: 5px;
+        color: rgb(119, 210, 246);
+        font-weight: 500;
+    }
+
+    .info_contacto .estudio{
+        color: white;
+        font-weight: bold;
+    }
+
+    .info_contacto h4{
+        margin-bottom: 5px;
+        color: white;
+        font-weight: 300;
+    }
+
+    .contenedor .lado_derecho{
+        position: relative;
+        background: rgb(255, 255, 255);
+        padding: 40px;
+        }
+
+    .lado_derecho .titulo{
+            color: rgb(0, 115, 170);
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            font-family: 'Rubik', sans-serif;
+            line-height: 1.4em;}
+            
+    .lado_derecho p{
+        font-family: 'Montserrat', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.1 em;
+    }
+
+    .experiencia{
+        padding-top: 50px;
+    }
+
+    .experiencia .box{
+        /*display: flex;
+        flex-direction: row;*/
+        margin: 20px 0;
+    }
+
+    .experiencia .box .año_compañia{
+        min-width: 150px;
+    }
+
+    .experiencia .box .año_compañia h5{
+        text-transform: uppercase;
+        color: rgb(128, 128, 128);
+        font-weight: 600;
+    }
+
+    .año_compañia ._cambioimagen,.año_compañia .restablecer{
+        background-color: rgb(240, 240, 240);
+        border-color: rgb(240, 240, 240);
+        color: rgb(0, 0, 0);
+        border-style: none ;
+        text-align: center;
+        margin-top: 4px;
+        width: 132px;
+        /*font-family: 'Rubik', sans-serif;*/
+        margin-left: -4px;
+        /*font-size: 0.99em;*/
+        border-radius: 0.5rem;
+        cursor: pointer;         
+        transition: box-shadow 0.5s ease;
+    }
+
+    .año_compañia ._cambioimagen:hover{
+        box-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.4);
+    }
+
+    .año_compañia .restablecer:hover{
+        box-shadow: 0 0 0.9rem rgba(255, 255, 255, 0.4);
+    }
+
+
+    .experiencia .box .text h4{
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        color: rgb(0, 115, 170);
+        font-size: 15px;
+
+    }
+
+    .lista_habilidades li{
+        color: rgb(0, 0, 0);
+    }
+
+    .Intereses{
+        margin-top: 30px;
+    }
